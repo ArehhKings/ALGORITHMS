@@ -1,0 +1,52 @@
+/*
+Question:
+write me a function stringy that takes a size and returns a string of 
+alternating 1s and 0s. The string should start with a 1.
+
+A string with size 6 should return :'101010'.
+
+with size 4 should return : '1010'.
+
+with size 12 should return : '101010101010'.
+
+The size will always be positive and will only use whole numbers.
+
+*/
+
+function stringy(size) {
+  // your code here
+  const result = [];
+  for (let i = 0; i < Number(size); i++) {
+    if (i === 0 || i % 2 === 0) {
+      result.push("1");
+    } else {
+      result.push("0");
+    }
+  }
+  return result.join();
+}
+console.log(stringy(21));
+/*******************************/
+
+function stringy(size) {
+  let result = "";
+
+  for (let i = 0; i < Number(size); i++) {
+    result += i === 0 || i % 2 === 0 ? "1" : "0";
+  }
+
+  return result;
+}
+console.log(stringy(3));
+/*******************************/
+function stringy(size) {
+  let str = "10";
+  return str.padEnd(size, "10");
+}
+console.log(stringy(6));
+/*******************************/
+function stringy(size) {
+  return "".padStart(size, "10");
+}
+
+console.log(stringy(10));
