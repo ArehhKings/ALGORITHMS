@@ -1,3 +1,7 @@
+// Description: Shortest Job First (SJF) is a scheduling algorithm that selects the waiting process with the smallest execution time to execute next.
+// The process with the smallest execution time is selected for the next execution.
+//
+
 function sfj(jobs, index) {
   let time = 0;
   let job = jobs[index];
