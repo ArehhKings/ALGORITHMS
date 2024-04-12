@@ -35,3 +35,15 @@ function factorial(num) {
 }
 
 console.log(factorial(-5));
+
+// give an example of a callback function
+function greeting(name, callback) {
+  console.log("Hello " + name);
+}
+
+function processUserInput(callback) {
+  const name = "John";
+  callback(name);
+}
+
+//processUserInput(greeting);

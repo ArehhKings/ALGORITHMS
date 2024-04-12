@@ -46,6 +46,15 @@ function removeDuplication(arr) {
   }
   return result; // Return the array containing unique values
 }
+
+function removeDuplication(arr) {
+  return arr.filter((val) => arr.indexOf(val) === arr.lastIndexOf(val));
+}
+
+function removeDuplication(arr) {
+  return [...new Set(arr)];
+}
+
 console.log(removeDuplication([1, 1, 3, 4, 4, 5, 6, 6, 7, 8, 3, 2]));
 
 //another solution using the filter method
