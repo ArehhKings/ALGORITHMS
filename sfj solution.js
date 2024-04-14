@@ -4,7 +4,7 @@
 
 function sfj(jobs, index) {
   let time = 0;
-  let job = jobs[index];
+  //let job = jobs[index];
 
   for (let i = 0; i < jobs.length; i++) {
     console.log(jobs[i]);

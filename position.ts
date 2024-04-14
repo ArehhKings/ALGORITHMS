@@ -1,9 +1,9 @@
 function getPosition(number) {
   // Initialize the position to 1.
-  let position = "";
-    if(number == 0 || number.length  == 0){
-        return '0'
-    }
+  let position = 1;
+  if (number == 0 || number.length == 0) {
+    return "0";
+  }
   // Loop through all the numbers from 1 to number + 1.
   for (let i = 1; i <= number; i++) {
     // Sort the digits of the number.
