@@ -20,6 +20,7 @@ BANG!────┘  ├─────► OK!
 ┌─┴─┴───┴┬──┘
 │------1-│
 └────────┘
+
 Input
 Start and finish shelf numbers (always positive integers, finish no smaller than start)
 
@@ -31,17 +32,12 @@ Start 1, finish 5, then answer is 2 (1 => 4 => 5 or 1 => 2 => 5)
 
 */
 
-
-
-
-function solution(start, finish){
-  
-    //Mew
-    let count= 0; 
-    while(start< finish){
-      start +=3;
-      count ++;
-      } 
-    return count;
+function solution(start, finish) {
+  //Mew
+  let count = 0;
+  while (start < finish) {
+    start += 3;
+    count++;
   }
-  
+  return count;
+}
